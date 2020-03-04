@@ -40,6 +40,7 @@
             this.cmdCalculate = new System.Windows.Forms.Button();
             this.txtDiscount = new System.Windows.Forms.TextBox();
             this.lblDiscount = new System.Windows.Forms.Label();
+            this.chkDiscountChild = new System.Windows.Forms.CheckBox();
             this.grpSection.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -157,11 +158,23 @@
             this.lblDiscount.TabIndex = 12;
             this.lblDiscount.Text = "Discount";
             // 
+            // chkDiscountChild
+            // 
+            this.chkDiscountChild.AutoSize = true;
+            this.chkDiscountChild.Location = new System.Drawing.Point(111, 119);
+            this.chkDiscountChild.Name = "chkDiscountChild";
+            this.chkDiscountChild.Size = new System.Drawing.Size(49, 17);
+            this.chkDiscountChild.TabIndex = 13;
+            this.chkDiscountChild.Text = "Child";
+            this.chkDiscountChild.UseVisualStyleBackColor = true;
+            this.chkDiscountChild.CheckedChanged += new System.EventHandler(this.chkDiscountChild_CheckedChanged);
+            // 
             // TicketsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(608, 445);
+            this.Controls.Add(this.chkDiscountChild);
             this.Controls.Add(this.lblDiscount);
             this.Controls.Add(this.txtDiscount);
             this.Controls.Add(this.cmdCalculate);
@@ -195,6 +208,7 @@
         private System.Windows.Forms.Button cmdCalculate;
         private System.Windows.Forms.TextBox txtDiscount;
         private System.Windows.Forms.Label lblDiscount;
+        private System.Windows.Forms.CheckBox chkDiscountChild;
     }
 }
 
