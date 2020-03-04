@@ -55,7 +55,7 @@ namespace Ticketing
 
      public void calculatePrice()
      {
-          
+        
          switch (section)
          {
              case 1:

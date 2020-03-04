@@ -58,6 +58,13 @@ namespace Ticketing
         private void chkDiscount_CheckedChanged(object sender, EventArgs e)
         {
             txtDiscount.Text = "5";
+            chkDiscountChild.Checked = false;
+        }
+
+        private void chkDiscountChild_CheckedChanged(object sender, EventArgs e)
+        {
+            txtDiscount.Text = "10";
+            chkDiscount.Checked = false;
         }
     }
 }
